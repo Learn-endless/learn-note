@@ -22,19 +22,19 @@ struct book
 };
 int main()
 {
-	struct book b1 = { "C语言程序设计", 55 };
-	struct book* pb = &b1;
-	printf("%s\n", b1.name); 
-	printf("%d\n", b1.price);     //结构体变量.成员。
+	struct book n1 = { "C语言程序设计", 55 };
+	struct book* pb = &n1;
+	printf("%s\n", n1.name); 
+	printf("%d\n", n1.price);     //结构体变量.成员。
 	printf("%s\n", (*pb).name);    
 	printf("%d\n", (*pb).price);  // *pb指向b1。
 	printf("%s\n", pb->name);     
 	printf("%d\n", pb->price);    //结构体指针->成员。
 
-	b1.price = 10;            //改变b1的价格。
-	strcpy(b1.name, "C++");   //字符串拷贝函数。改变名字。需要包含头文件#include<string.h>.
-	printf("%s\n", b1.name);
-	printf("%d\n", b1.price);
+	n1.price = 10;            //改变b1的价格。
+	strcpy(n1.name, "C++");   //字符串拷贝函数。改变名字。需要包含头文件#include<string.h>.
+	printf("%s\n", n1.name);
+	printf("%d\n", n1.price);
 
 
 	//int a = 10;
@@ -88,4 +88,5 @@ int main()
 	//printf("%d\n", MAX);
 
 	return 0;
+
 }
